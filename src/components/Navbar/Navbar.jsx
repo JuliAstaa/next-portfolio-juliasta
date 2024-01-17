@@ -96,8 +96,8 @@ const Navbar = () => {
           </a>
         </div>
         <motion.div
-          initial={{ x: "500%" }}
-          animate={{ x: 0 }}
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.5 }}
           className=" lg:hidden flex justify-end items-center relative"
         >
