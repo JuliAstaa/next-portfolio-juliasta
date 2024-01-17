@@ -77,7 +77,7 @@ const Project = () => {
           transition={{ duration: 0.5 }}
           className="text-sky-500 font-semibold text-2xl "
         >
-          About me
+          Projects
         </motion.h1>
         <Link href={"/projects"} className="">
           <motion.button
