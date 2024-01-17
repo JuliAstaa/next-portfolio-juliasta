@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar";
-import Hero from "@/components/Hero/Hero";
-import AboutMe from "@/components/AboutMe/AboutMe";
-import Skills from "@/components/Skills/Skills";
+"use client";
+
+import React from "react";
 import Background from "@/components/Background/Background";
-import Project from "@/components/Projects/Projects";
+import MoreProjects from "@/components/Projects/MoreProjects";
+import NavProjects from "@/components/Navbar/NavProjects";
 import Footer from "@/components/Footer/Footer";
 import {
   FaInstagram,
@@ -47,31 +47,18 @@ const Links = [
   },
 ];
 
-export default function Home() {
+const page = () => {
   return (
-    <main className="w-full bg-dark-purple min-h-dvh h-full flex justify-center relative">
+    <main className="bg-dark-purple bg-cover w-full min-h-dvh h-fit flex justify-center relative">
       <div className="background absolute z-10">
         <Background />
       </div>
-      <div className="min-dvh-screen w-full h-full absolute z-20 top-0">
-        <div className="max-w-7xl mx-auto w-full h-fit">
-          {/* header */}
-          <div className="header max-w-7xl">
-            <Navbar />
-          </div>
-          {/* hero */}
-          <div className="w-full h-full">
-            <Hero Links={Links} />
-          </div>
-          {/* about me */}
-          <div id="about-me" className="w-full h-screen">
-            <AboutMe />
-          </div>
-          <div id="skills" className="skills w-full h-screen">
-            <Skills />
-          </div>
-          <div id="projects" className="w-full mt-60 lg:mt-0">
-            <Project />
+      <div className="min-dvh-screen w-full  absolute z-20 top-0 ">
+        <div className="max-w-7xl mx-auto w-full h-full ">
+          <NavProjects />
+
+          <div className="mt-16 h-full w-full">
+            <MoreProjects />
           </div>
         </div>
         <div className="w-full mt-32 bg-slate-950">
@@ -82,4 +69,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default page;
