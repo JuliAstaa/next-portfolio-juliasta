@@ -56,7 +56,7 @@ export default function Home() {
       <div className="min-dvh-screen w-full h-full absolute z-20 top-0">
         <div className="max-w-7xl mx-auto w-full h-fit">
           {/* header */}
-          <div className="header max-w-7xl">
+          <div className="header">
             <Navbar />
           </div>
           {/* hero */}
