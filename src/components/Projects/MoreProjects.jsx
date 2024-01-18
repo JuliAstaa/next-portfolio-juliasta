@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const projects = [
   {
@@ -57,9 +56,6 @@ const projects = [
 const MoreProjects = () => {
   const [active, setActive] = useState(false);
   const [projectId, setProjectId] = useState();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
 
   const selectedProject = projects.find((project) => project.id === projectId);
 
@@ -69,10 +65,7 @@ const MoreProjects = () => {
   };
 
   return (
-    <div
-      ref={ref}
-      className="w-full min-h-full h-full grid md:grid-cols-2 lg:grid-cols-4 place-content-center gap-4 p-4 "
-    >
+    <div className="w-full min-h-screen h-full grid md:grid-cols-2 lg:grid-cols-4 place-content-center gap-4 p-4 ">
       {projects.map((project, index) => {
         return (
           <motion.div

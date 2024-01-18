@@ -49,34 +49,36 @@ const Links = [
 
 export default function Home() {
   return (
-    <main className="w-full bg-dark-purple min-h-dvh h-full flex justify-center relative">
-      <div className="background absolute z-10">
-        <Background />
-      </div>
-      <div className="min-dvh-screen w-full h-full absolute z-20 top-0">
-        <div className="max-w-7xl mx-auto w-full h-fit">
-          {/* header */}
-          <div className="header">
-            <Navbar />
-          </div>
-          {/* hero */}
-          <div className="w-full h-full">
-            <Hero Links={Links} />
-          </div>
-          {/* about me */}
-          <div id="about-me" className="w-full h-screen">
-            <AboutMe />
-          </div>
-          <div id="skills" className="skills w-full h-screen">
-            <Skills />
-          </div>
-          <div id="projects" className="w-full mt-60 lg:mt-0">
-            <Project />
-          </div>
+    <main className="w-full bg-dark-purple min-h-dvh h-full flex flex-col justify-center relative  bottom-0">
+      <div className="abolute w-full bg-dark-purple z-20">
+        <div className="background absolute z-10">
+          <Background />
         </div>
-        <div className="w-full mt-32 bg-slate-950">
-          <div className="max-w-7xl mx-auto w-full p-4">
-            <Footer Links={Links} />
+        <div className="w-full relative z-50">
+          <div className="max-w-7xl mx-auto w-full h-fit ">
+            {/* header */}
+            <div className="header">
+              <Navbar />
+            </div>
+            {/* hero */}
+            <div className="w-full h-full">
+              <Hero Links={Links} />
+            </div>
+            {/* about me */}
+            <div id="about-me" className="w-full h-screen">
+              <AboutMe />
+            </div>
+            <div id="skills" className="skills w-full h-screen">
+              <Skills />
+            </div>
+            <div id="projects" className="w-full mt-60 lg:mt-0">
+              <Project />
+            </div>
+          </div>
+          <div className="w-full mt-32 bg-slate-950">
+            <div className="max-w-7xl mx-auto w-full p-4">
+              <Footer Links={Links} />
+            </div>
           </div>
         </div>
       </div>

@@ -248,7 +248,7 @@ const Project = () => {
               );
             })}
           </Swiper>
-          <div className="absolute right-1/4 lg:right-0 top-3/4 lg:top-1/4 w-1/2 h-full">
+          <div className="absolute lg:right-0 top-3/4 lg:top-1/4 w-full lg:w-1/2 h-full">
             <Swiper
               onSwiper={setThumbsSwiper}
               loop={true}

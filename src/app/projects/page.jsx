@@ -50,20 +50,22 @@ const Links = [
 const page = () => {
   return (
     <main className="bg-dark-purple bg-cover w-full min-h-dvh h-fit flex justify-center relative">
-      <div className="background absolute z-10">
-        <Background />
-      </div>
-      <div className="min-dvh-screen w-full  absolute z-20 top-0 ">
-        <div className="max-w-7xl mx-auto w-full h-full ">
-          <NavProjects />
-
-          <div className="mt-16 h-full w-full">
-            <MoreProjects />
-          </div>
+      <div className="abolute w-full bg-dark-purple z-20">
+        <div className="background absolute z-10">
+          <Background />
         </div>
-        <div className="w-full mt-32 bg-slate-950">
-          <div className="max-w-7xl mx-auto w-full p-4">
-            <Footer Links={Links} />
+        <div className="w-full  relative z-20 top-0">
+          <div className="max-w-7xl mx-auto w-full h-full ">
+            <NavProjects />
+
+            <div className="mt-16 h-full w-full">
+              <MoreProjects />
+            </div>
+          </div>
+          <div className="w-full mt-32 bg-slate-950">
+            <div className="max-w-7xl mx-auto w-full p-4">
+              <Footer Links={Links} />
+            </div>
           </div>
         </div>
       </div>

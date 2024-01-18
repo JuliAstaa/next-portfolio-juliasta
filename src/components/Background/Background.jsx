@@ -21,7 +21,7 @@ const Background = () => {
       autoPlay: true,
       background: {
         color: {
-          value: "#030014",
+          value: "transparent",
         },
         image: "",
         position: "",
