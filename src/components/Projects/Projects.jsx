@@ -69,7 +69,7 @@ const Project = () => {
   });
 
   return (
-    <div className="w-full h-full p-4 mt-16 text-white overflow-x-hidden">
+    <div className="w-full h-full p-4 mt-16 text-white overflow-hidden">
       <div className="w-full flex justify-between items-center ">
         <motion.h1
           initial={{ opacity: 0, x: "-200%" }}
@@ -128,7 +128,7 @@ const Project = () => {
                       width={1280}
                       height={720}
                       alt={slider.name}
-                      className="w-full h-42 lg:h-[720px] object-cover relative group"
+                      className="w-full h-full object-cover relative group"
                     />
                     <div className="lg:flex hidden  absolute w-full h-full left-0 top-0 bg-[rgba(3,0,20,0.5)] p-4 ">
                       <div className="w-1/3 rounded-md bg-[rgba(0,0,0,.8)] ml-8 p-4 flex gap-6 flex-col justify-center">
