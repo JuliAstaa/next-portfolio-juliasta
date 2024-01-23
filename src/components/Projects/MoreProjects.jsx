@@ -9,6 +9,17 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    name: "Astacumalaka's Movie",
+    desc: "My first next js project with redux",
+    image: "/astacumalaka-movie.png",
+    tech: {
+      image: ["/next.png", "/reduxjs.png", "/tailwind.png"],
+    },
+    url: "https://astacumalaka-movies.vercel.app/",
+    repoUrl: "https://github.com/JuliAstaa/astacumalaka-movies",
+  },
+  {
+    id: 2,
     name: "To-Do List",
     desc: "A simple to-do list website using react.js, tailwindCSS, and redux",
     image: "/to-do-list.png",
@@ -19,7 +30,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/to-do-list",
   },
   {
-    id: 2,
+    id: 3,
     name: "APOD",
     desc: "APOD (Astronomy Pictures Of the Day) website using NASA's API",
     image: "/APOD.png",
@@ -30,7 +41,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/APOD",
   },
   {
-    id: 3,
+    id: 4,
     name: "Astacumalaka's Waroeng",
     desc: "A simple e-commerce website, I made this website while learning redux",
     image: "/react-redux.png",
@@ -41,7 +52,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/react-redux",
   },
   {
-    id: 4,
+    id: 5,
     name: "Wibunime",
     desc: "My first nextjs project",
     image: "/wibunime.png",
