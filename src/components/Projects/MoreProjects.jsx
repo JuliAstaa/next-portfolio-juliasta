@@ -9,6 +9,17 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    name: "Tic Tac Toe",
+    desc: "A simple tic tac toe game, use html, tailwindcss, and javascript",
+    image: "/tic-tac-toe.png",
+    tech: {
+      image: ["/html.png", "/tailwind.png", "/js.png"],
+    },
+    url: "https://tic-tac-toe-part-2.vercel.app/",
+    repoUrl: "https://github.com/JuliAstaa/tic-tac-toe-part-2",
+  },
+  {
+    id: 2,
     name: "Astacumalaka's Movie",
     desc: "My first next js project with redux",
     image: "/astacumalaka-movie.png",
@@ -19,7 +30,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/astacumalaka-movies",
   },
   {
-    id: 2,
+    id: 3,
     name: "To-Do List",
     desc: "A simple to-do list website using react.js, tailwindCSS, and redux",
     image: "/to-do-list.png",
@@ -30,7 +41,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/to-do-list",
   },
   {
-    id: 3,
+    id: 4,
     name: "APOD",
     desc: "APOD (Astronomy Pictures Of the Day) website using NASA's API",
     image: "/APOD.png",
@@ -41,7 +52,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/APOD",
   },
   {
-    id: 4,
+    id: 5,
     name: "Astacumalaka's Waroeng",
     desc: "A simple e-commerce website, I made this website while learning redux",
     image: "/react-redux.png",
@@ -52,7 +63,7 @@ const projects = [
     repoUrl: "https://github.com/JuliAstaa/react-redux",
   },
   {
-    id: 5,
+    id: 6,
     name: "Wibunime",
     desc: "My first nextjs project",
     image: "/wibunime.png",
@@ -120,7 +131,7 @@ const MoreProjects = () => {
               </button>
             </div>
             <div className="max-w-5xl h-full grid-cols-2 grid mt-6 gap-4 lg:gap-0">
-              <div className="border-r border-sky-500 pr-4 col-span-2 lg:col-span-1">
+              <div className="lg:border-r border-sky-500 pr-4 col-span-2 lg:col-span-1">
                 <Image
                   priority={75}
                   src={selectedProject.image}
